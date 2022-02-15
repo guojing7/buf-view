@@ -7,7 +7,7 @@ authors = ["guojing <srson.hd@gmail.com>"]
 description = "Read/write primitive types on a wrapper buffer view"
 repository = "https://github.com/guojing7/buf-view"
 homepage = "https://github.com/guojing7/buf-view"
-keywords = ["binary", "bytes", "endian", "endianness", "big-endian", "little-endian", "parser"]
+keywords = ["binary", "bytes", "endian", "big-endian", "little-endian"]
 categories = ["data-structures", "encoding", "network-programming", "parsing"]
 
 [dependencies]
