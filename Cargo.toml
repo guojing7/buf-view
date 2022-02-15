@@ -1,0 +1,13 @@
+[package]
+name = "buf-view"
+version = "0.1.0"
+license = "MIT"
+edition = "2021"
+authors = ["guojing <srson.hd@gmail.com>"]
+description = "Read/write primitive types on a wrapper buffer view"
+repository = "https://github.com/guojing7/buf-view"
+homepage = "https://github.com/guojing7/buf-view"
+keywords = ["binary", "bytes", "endian", "endianness", "big-endian", "little-endian", "parser"]
+categories = ["data-structures", "encoding", "network-programming", "parsing"]
+
+[dependencies]
