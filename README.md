@@ -31,6 +31,7 @@ let v = vec![0, 1, 2, 3, 4, 5, 6, 7];
 let mut buf_view = BufView::wrap(v.as_slice());
 assert_eq!(buf_view.read_u8(), 0);
 assert_eq!(buf_view.read_u32(), 0x01020304);
+assert_eq!(buf_view.read_u16_le(), 0x0605);
 
 // wrap from &str
 let s = "01234567";
@@ -51,11 +52,11 @@ let mut buf_view = BufViewMut::wrap(&mut buf);
 
 buf_view.write_u8(0);
 buf_view.write_u16(0x0102);
-buf_view.write_u32(0x03040506);
+buf_view.write_u32_le(0x03040506);
 
 assert_eq!(buf_view.read_u8(), 0);
 assert_eq!(buf_view.read_u16(), 0x0102);
-assert_eq!(buf_view.read_u32(), 0x03040506);
+assert_eq!(buf_view.read_u32_le(), 0x03040506);
 assert_eq!(buf_view.get_u16(1), 0x0102);
 ```
 
