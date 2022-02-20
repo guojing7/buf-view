@@ -24,7 +24,7 @@ let mut buf_view = BufView::wrap(&buf);
 assert_eq!(buf_view.read_u8(), 0);
 assert_eq!(buf_view.read_u16(), 0x0102);
 assert_eq!(buf_view.read_u32_le(), 0x06050403);
-assert_eq!(buf_view.get_u16_le(1), 0x0202);
+assert_eq!(buf_view.get_u16_le(1), 0x0201);
 
 // wrap from vector
 let v = vec![0, 1, 2, 3, 4, 5, 6, 7];
